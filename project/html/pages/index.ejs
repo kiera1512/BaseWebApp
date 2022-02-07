@@ -8,18 +8,20 @@
   <!-- the classes 'page-header' and 'btn btn-default' create bootstrap components.  -->
   <!-- Check out more components here: http://getbootstrap.com/components/ -->
   <div class="page-header">
+    <% include ../helpers/navbar %>
     <h1>HAPPY NEW YEAR 2022!</h1>
   </div>
 
   <p id="demo">
-    This is wep app testing
+    Temperature of the city you live in
   </p>
 
-  <button class="btn btn-default" type="button" onclick="myFunction()">
-    Connect now
-  </button>
+  <input class="search" type="text" placeholder="Enter city name">
+  <button type="button" onClick="searchWeather()">Search</button>
+  <div class="error-message"></div>
+  <div class="city"></div>
 
-  <div id="doge-image"/>
+  <div class="temp"></div>
 
 </body>
 
